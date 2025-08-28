@@ -1,0 +1,135 @@
+{
+  "mcqs": {
+    "mcq_1": {
+      "id": "df96851f-05ee-487b-a9fa-0b76f71a9068",
+      "stem": "A 28-year-old construction worker presents with a clawed posture of the ring and little fingers with **hyperextension** at the *metacarpophalangeal (MCP)* joints and **flexion** at the *interphalangeal (IP)* joints. He reports weakness with fine finger abduction and adduction and difficulty holding a piece of paper between fingers. Which muscle group is most likely **paralyzed**?",
+      "options": {
+        "A": "Extensor digitorum",
+        "B": "Interossei and lumbricals",
+        "C": "Adductor pollicis",
+        "D": "Pronator quadratus"
+      },
+      "feedback": {
+        "wrong": "❌ That choice is understandable but incorrect. The **extensor digitorum** extends the fingers at MCP but does not flex MCP nor extend IP via the extensor hood mechanism the way intrinsics do. The key is that *loss of intrinsics* (lumbricals/interossei) produces MCP hyperextension with IP flexion — think \"intrinsic minus = claw\".",
+        "correct": "✅ Correct — the **interossei and lumbricals** are the intrinsic muscles that normally *flex the MCP* and *extend the IP* joints. When they are paralyzed, unopposed extrinsic extensors hyperextend the MCP while extrinsic flexors flex the IPs, producing a claw. Great recognition — remember: intrinsics = MCP flexion/IP extension (Mnemonic: \"I ntrinsics F lex MCP, E xtend IP\")."
+      },
+      "learning_gap": "Confusing extrinsic extensors (extensor digitorum) with intrinsic muscles (lumbricals/interossei) that flex MCP and extend IP via the extensor expansion.",
+      "correct_answer": "B"
+    },
+    "mcq_2": {
+      "id": "f76f8936-43ae-4abf-a6dd-c4d621141fd7",
+      "stem": "A student asks which muscles *flex the MCP joints* and simultaneously *extend the IP joints* during coordinated finger motion. On physical exam, these muscles assist with precise pinch and finger abduction/adduction. Which pair of muscle groups performs these combined actions?",
+      "options": {
+        "A": "Flexor digitorum superficialis and profundus",
+        "B": "Lumbricals and interossei",
+        "C": "Extensor digitorum and extensor indicis",
+        "D": "Thenar muscles"
+      },
+      "feedback": {
+        "wrong": "❌ Reasonable distractor but not correct. The *flexor digitorum* muscles flex the IP joints, not extend them. The distinctive combined action (MCP flexion + IP extension) is a hallmark of the **intrinsic** lumbricals/interossei acting via the extensor hood.",
+        "correct": "✅ Right — the **lumbricals and interossei** produce *MCP flexion* and *IP extension* through insertion into the dorsal digital expansion. Well done — these are the key intrinsic muscles for fine motor control of the digits. Tip: \"Lumbricals LIFT MCP, LET IP\" (lift = flex MCP; let = extend IP)."
+      },
+      "learning_gap": "Mistaking extrinsic flexors (FDS/FDP) for intrinsics that extend IP joints; intrinsics work via the dorsal expansion.",
+      "correct_answer": "B"
+    },
+    "mcq_3": {
+      "id": "b3adf065-8490-4c31-9666-5ab939b310ee",
+      "stem": "During dissection, you observe fibers inserting into the *dorsal digital expansion*. Contraction of these fibers flexes the MCP while extending the IP joints by pulling on the lateral bands. Which structure do the lumbricals and interossei insert into to achieve this effect?",
+      "options": {
+        "A": "Palmar aponeurosis",
+        "B": "Flexor retinaculum",
+        "C": "Extensor (dorsal) expansion / extensor hood",
+        "D": "Transverse metacarpal ligament"
+      },
+      "feedback": {
+        "wrong": "❌ That seems logical but is incorrect. The **palmar aponeurosis** and flexor retinaculum are on the palmar side and are unrelated to transmitting intrinsic muscle force to the dorsal extensor mechanism. Look for the *dorsal expansion/extensor hood*.",
+        "correct": "✅ Correct — the **extensor (dorsal) expansion / extensor hood** is the structure through which lumbricals and interossei extend the IP joints while flexing the MCP. Good anatomical insight — remember: insertion into the hood transmits intrinsic force to the dorsal mechanism. Mnemonic: \"Hood = Hook to extend IPs.\""
+      },
+      "learning_gap": "Not appreciating the extensor hood as the insertion point that enables intrinsic muscles to extend IP joints.",
+      "correct_answer": "C"
+    }
+  },
+  "buzzwords": [
+    "Intrinsic minus (claw hand)",
+    "Extensor (dorsal) expansion / extensor hood",
+    "MCP flexion with IP extension",
+    "LOAF mnemonic (median nerve intrinsic muscles)",
+    "Froment's sign"
+  ],
+  "final_summary": "| # | High-Yield Fact |\n|---|---|\n|1|The **_lumbricals_** and **_interossei_** are the intrinsic hand muscles that *flex the MCP* and *extend the IP* joints.|\n|2|The lumbricals and interossei insert into the **_extensor (dorsal) expansion_** (extensor hood).|\n|3|Loss of intrinsics produces **_MCP hyperextension_** and **_IP flexion_** — the classic \"claw hand\" (intrinsic minus).|\n|4|The **_median nerve_** supplies lumbricals to the index and middle fingers (1st & 2nd).|\n|5|The **_ulnar nerve_** supplies the interossei and the medial two lumbricals (3rd & 4th).|\n|6|Ulnar nerve palsy → loss of finger *abduction/adduction* (interossei) and power grip weakness.|\n|7|The **_extensor hood_** comprises the central slip and lateral bands that extend PIP and DIP joints.|\n|8|Extrinsic flexors (FDP/FDS) flex IP joints; extrinsic extensors (ED) primarily extend MCP unless assisted by intrinsics.|\n|9|Intrinsic-extrinsic balance determines finger posture; loss of intrinsics leads to unopposed extrinsic actions.|\n|10|Clinical tests: **_Froment's sign_** for adductor pollicis/ulnar dysfunction; **Bunnel-Littler** for intrinsic tightness.|",
+  "high_yield_images": [
+    {
+      "keywords": [
+        "lumbrical",
+        "extensor expansion",
+        "FDP origin"
+      ],
+      "description": "Illustration showing lumbrical origins from FDP and insertion into the dorsal digital expansion (extensor hood).",
+      "search_query": "lumbrical muscles hand anatomy dorsal extensor expansion diagram"
+    },
+    {
+      "keywords": [
+        "interossei",
+        "palmar",
+        "dorsal"
+      ],
+      "description": "Detailed diagram of palmar and dorsal interossei showing attachments and actions (PAD/DAB).",
+      "search_query": "interossei muscles palmar and dorsal anatomy diagram"
+    },
+    {
+      "keywords": [
+        "extensor hood",
+        "central slip",
+        "lateral bands"
+      ],
+      "description": "Schematic of extensor hood components: central slip, lateral bands, and how intrinsics insert.",
+      "search_query": "extensor expansion extensor hood lateral bands central slip diagram"
+    }
+  ],
+  "learning_gap_tags": [
+    "intrinsic_vs_extrinsic",
+    "extensor_hood_mechanism",
+    "median_vs_ulnar_innervation",
+    "claw_hand_localization"
+  ],
+  "recommended_videos": [
+    {
+      "keywords": [
+        "lumbricals anatomy",
+        "interossei function",
+        "exam tips"
+      ],
+      "description": "Concise lecture covering origins, insertions, actions, and clinical relevance of lumbricals and interossei for exam prep.",
+      "search_query": "lumbricals and interossei anatomy and function explained for medical exams"
+    },
+    {
+      "keywords": [
+        "extensor hood animation",
+        "lateral bands",
+        "central slip"
+      ],
+      "description": "Animated video showing the extensor expansion, central slip, and lateral bands and how intrinsics extend IP joints.",
+      "search_query": "extensor hood mechanism and lateral bands animation"
+    }
+  ],
+  "recursive_learning_gaps": [
+    {
+      "id": "16da8591-6594-4864-a484-01074951cc5e",
+      "gap": "Confusing the roles of **intrinsic hand muscles** (lumbricals and interossei) vs extrinsic extensors/flexors in producing MCP flexion and IP extension.",
+      "level": 1,
+      "confusion": "Which muscle(s) when **paralyzed** lead to *hyperextension* at the **MCP** and *flexion* at the **IP** joints?"
+    },
+    {
+      "id": "786c104b-bdd3-44f2-b805-e1783818c189",
+      "gap": "Unclear understanding of how the **extensor expansion (dorsal hood)** transmits intrinsic muscle force to extend the IP joints while flexing the MCP.",
+      "level": 2,
+      "confusion": "Why do **lumbricals and interossei** cause *flexion* at the MCP and *extension* at the IP joints instead of acting as simple flexors or extensors?"
+    },
+    {
+      "id": "a384d7d1-d5c6-489c-abae-d98ce25c71e1",
+      "gap": "Lack of knowledge about the **lateral bands, central slip, and hood mechanism** and their attachments that allow lumbricals/interossei to extend IP joints.",
+      "level": 3,
+      "confusion": "How does the **extensor expansion** (dorsal digital expansion) mechanically convert intrinsic muscle contraction into IP extension?"
+    }
+  ]
+}

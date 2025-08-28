@@ -1,0 +1,135 @@
+{
+  "mcqs": [
+    {
+      "id": "mcq1",
+      "stem": "What is the primary purpose of React Native?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "Building web applications only",
+          "isCorrect": false
+        },
+        {
+          "id": "opt2",
+          "text": "Creating native mobile apps using JavaScript",
+          "isCorrect": true
+        },
+        {
+          "id": "opt3",
+          "text": "Server-side rendering",
+          "isCorrect": false
+        },
+        {
+          "id": "opt4",
+          "text": "Database management",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "React Native allows developers to build native mobile applications using JavaScript and React, providing a bridge to native platform APIs."
+    },
+    {
+      "id": "mcq2",
+      "stem": "Which component is used for navigation in React Native apps?",
+      "options": [
+        {
+          "id": "opt1",
+          "text": "NavigationContainer",
+          "isCorrect": true
+        },
+        {
+          "id": "opt2",
+          "text": "RouterProvider",
+          "isCorrect": false
+        },
+        {
+          "id": "opt3",
+          "text": "AppNavigator",
+          "isCorrect": false
+        },
+        {
+          "id": "opt4",
+          "text": "ScreenManager",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NavigationContainer is the root component that manages the navigation tree and contains the navigation state."
+    }
+  ],
+  "learning_gaps": [
+    {
+      "id": "gap1",
+      "level": 1,
+      "confusion": "**Understanding component lifecycle** in React Native",
+      "gap": "Need to grasp how components mount, update, and unmount in the React Native environment",
+      "children": [
+        {
+          "id": "gap1.1",
+          "level": 2,
+          "confusion": "*useEffect hook timing*",
+          "gap": "When exactly does useEffect run in relation to component rendering"
+        },
+        {
+          "id": "gap1.2",
+          "level": 2,
+          "confusion": "*Cleanup functions*",
+          "gap": "How to properly clean up subscriptions and timers"
+        }
+      ]
+    },
+    {
+      "id": "gap2",
+      "level": 1,
+      "confusion": "**State management patterns**",
+      "gap": "Choosing between local state, Context API, and external libraries",
+      "children": [
+        {
+          "id": "gap2.1",
+          "level": 2,
+          "confusion": "*Context vs Redux*",
+          "gap": "When to use Context API versus Redux for state management"
+        }
+      ]
+    }
+  ],
+  "final_summary": "# Learning Progress Summary\n\n## Key Achievements\n- ✅ **Component Basics**: Understanding of functional components and JSX\n- ✅ **Navigation**: Basic navigation setup with React Navigation\n- 🔄 **State Management**: Working on advanced patterns\n- 📚 **Performance**: Need to study optimization techniques\n\n## Next Steps\n1. **Focus Areas**: Component lifecycle and state management\n2. **Practice Projects**: Build a multi-screen app with complex state\n3. **Study Materials**: React Native documentation and best practices\n4. **Time Estimate**: 2-3 weeks to achieve proficiency\n\n## Performance Metrics\n- **Questions Answered**: 15/20\n- **Accuracy Rate**: 75%\n- **Confidence Level**: Moderate\n\nKeep practicing and building projects to reinforce these concepts!",
+  "buzzwords": [
+    "React Native",
+    "JavaScript",
+    "Mobile Development",
+    "Cross-platform",
+    "Component Lifecycle",
+    "State Management",
+    "Navigation",
+    "Performance Optimization"
+  ],
+  "high_yield_images": [
+    {
+      "id": "img1",
+      "description": "React Native Architecture Diagram",
+      "search_query": "react native architecture bridge javascript native",
+      "image_url": "https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": "img2",
+      "description": "Component Lifecycle Flowchart",
+      "search_query": "react component lifecycle diagram useEffect",
+      "image_url": "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800"
+    }
+  ],
+  "recommended_videos": [
+    {
+      "id": "vid1",
+      "title": "React Native Fundamentals",
+      "description": "Complete guide to React Native basics and core concepts",
+      "search_query": "react native tutorial fundamentals beginner",
+      "thumbnail_url": "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=400"
+    },
+    {
+      "id": "vid2",
+      "title": "Advanced State Management",
+      "description": "Deep dive into Redux, Context API, and modern state patterns",
+      "search_query": "react native state management redux context api",
+      "thumbnail_url": "https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=400"
+    }
+  ]
+}
