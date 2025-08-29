@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-// src/components/Sidebar.tsx
-import React, { useState, useEffect } from "react";
-import { View, Text, Pressable, ScrollView } from "react-native";
-import { MotiView } from "moti";
-import { Chrome as Home, Map, GitBranch, CircleAlert as AlertCircle, Radar, Clock, Navigation, ChartBar as BarChart3, Zap, Target, RotateCcw, BookMarked, Award, Users, UserCheck, UsersRound, Heart, TrendingUp, ChevronRight, ChevronDown, Bird, User, LogOut } from "lucide-react-native";
-
-// modals
-=======
 import React, { useState, useEffect } from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { MotiView } from "moti";
@@ -35,23 +26,14 @@ import {
   LogOut,
 } from "lucide-react-native";
 
->>>>>>> ed10f2b (Add files via upload)
 import PhoneLoginModal from "./modals/PhoneLoginModal";
 import OTPModal from "./modals/OTPModal";
 import RegistrationModal from "./modals/RegistrationModal";
 import ErrorModal from "./modals/ErrorModal";
-<<<<<<< HEAD
-
-import { useAuth } from "../contexts/AuthContext";
-
-
-// ✅ API Base URL
-=======
 import { supabase } from "@/lib/supabaseClient";
 import { useAuth } from "../contexts/AuthContext";
 
 // ✅ API Base URL (still used for fetching exams)
->>>>>>> ed10f2b (Add files via upload)
 const API_BASE = "https://pyq-learninng-gap-chat-production.up.railway.app";
 
 interface Subject {
@@ -81,62 +63,6 @@ interface NavigationGroup {
 
 const navigationGroups: NavigationGroup[] = [
   {
-<<<<<<< HEAD
-    id: 'learning-path',
-    name: 'My Learning Path',
-    icon: Map,
-    items: [
-      { id: 'prep-overview', name: 'Prep Overview', icon: Home, route: '/analytics/prep-overview' },
-      { id: 'mastery-map', name: 'Mastery Map', icon: Map, route: '/analytics/mastery-map' },
-      { id: 'gap-chains', name: 'Gap Chains', icon: GitBranch, route: '/analytics/gap-chains' },
-      { id: 'root-causes', name: 'Root Causes', icon: AlertCircle, route: '/analytics/root-causes' },
-      { id: 'neural-radar', name: 'Neural Radar', icon: Radar, route: '/analytics/neural-radar' },
-      { id: 'time-to-mastery', name: 'Time-to-Mastery Clock', icon: Clock, route: '/analytics/time-to-mastery' },
-      { id: 'mentor-flight-path', name: 'Mentor Flight Path', icon: Navigation, route: '/analytics/mentor-flight-path' },
-    ]
-  },
-  {
-    id: 'study-efficiency',
-    name: 'Study Efficiency & Revision',
-    icon: BarChart3,
-    items: [
-      { id: 'study-sessions', name: 'Study Sessions', icon: BarChart3, route: '/analytics/study-sessions' },
-      { id: 'speed-accuracy', name: 'Speed & Accuracy', icon: Zap, route: '/analytics/speed-accuracy' },
-      { id: 'confidence-reality', name: 'Confidence vs Reality', icon: Target, route: '/analytics/confidence-reality' },
-      { id: 'smart-revision', name: 'Smart Revision', icon: RotateCcw, route: '/analytics/smart-revision' },
-      { id: 'quick-fix-lessons', name: 'Quick Fix Lessons', icon: Zap, route: '/analytics/quick-fix-lessons' },
-      { id: 'mistakes-correct', name: 'Mistakes to Correct', icon: AlertCircle, route: '/analytics/mistakes-correct' },
-    ]
-  },
-  {
-    id: 'knowledge-assets',
-    name: 'Knowledge Assets',
-    icon: BookMarked,
-    items: [
-      { id: 'flashcards-bookmarks', name: 'Flashcards & Bookmarks', icon: BookMarked, route: '/analytics/flashcards-bookmarks' },
-      { id: 'achievements-rewards', name: 'Achievements & Rewards', icon: Award, route: '/analytics/achievements-rewards' },
-    ]
-  },
-  {
-    id: 'peer-cohorts',
-    name: 'Peer & Cohorts',
-    icon: Users,
-    items: [
-      { id: 'peer-comparison', name: 'Peer Comparison', icon: Users, route: '/analytics/peer-comparison' },
-      { id: 'buddy-mode', name: 'Buddy Mode', icon: UserCheck, route: '/analytics/buddy-mode' },
-      { id: 'dynamic-cohorts', name: 'Dynamic Cohorts', icon: UsersRound, route: '/analytics/dynamic-cohorts' },
-      { id: 'wellness-balance', name: 'Wellness & Balance', icon: Heart, route: '/analytics/wellness-balance' },
-    ]
-  },
-  {
-    id: 'performance-simulation',
-    name: 'Performance Simulation',
-    icon: TrendingUp,
-    items: [
-      { id: 'rank-score-simulator', name: 'Rank & Score Simulator', icon: TrendingUp, route: '/analytics/rank-score-simulator' },
-    ]
-  }
-=======
     id: "learning-path",
     name: "My Learning Path",
     icon: Map,
@@ -189,7 +115,6 @@ const navigationGroups: NavigationGroup[] = [
     icon: TrendingUp,
     items: [{ id: "rank-score-simulator", name: "Rank & Score Simulator", icon: TrendingUp, route: "/analytics/rank-score-simulator" }],
   },
->>>>>>> ed10f2b (Add files via upload)
 ];
 
 interface SidebarProps {
@@ -215,37 +140,21 @@ export default function Sidebar({
 }: SidebarProps) {
   const [isExamsExpanded, setIsExamsExpanded] = useState(false);
   const [isSubjectsExpanded, setIsSubjectsExpanded] = useState(false);
-<<<<<<< HEAD
-  const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set(['learning-path']));
-  const [activeItem, setActiveItem] = useState('prep-overview');
-=======
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set(["learning-path"]));
   const [activeItem, setActiveItem] = useState("prep-overview");
->>>>>>> ed10f2b (Add files via upload)
   const [selectedExam, setSelectedExam] = useState<Exam | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
   const [exams, setExams] = useState<Exam[]>([]);
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const sidebarWidth = 240;
 
-<<<<<<< HEAD
-  // 🔹 Auth from context
-  const { session, login, logout } = useAuth();
-
-  // modal states
-=======
   const { session, logout } = useAuth();
 
->>>>>>> ed10f2b (Add files via upload)
   const [showPhoneModal, setShowPhoneModal] = useState(false);
   const [showOTPModal, setShowOTPModal] = useState(false);
   const [showRegModal, setShowRegModal] = useState(false);
   const [showError, setShowError] = useState(false);
   const [pendingPhone, setPendingPhone] = useState<string | null>(null);
-<<<<<<< HEAD
-  const [tempUserId, setTempUserId] = useState<string | null>(null);
-=======
->>>>>>> ed10f2b (Add files via upload)
 
   // fetch exams/subjects
   useEffect(() => {
@@ -254,15 +163,7 @@ export default function Sidebar({
 
   const toggleGroup = (groupId: string) => {
     const newExpanded = new Set(expandedGroups);
-<<<<<<< HEAD
-    if (newExpanded.has(groupId)) {
-      newExpanded.delete(groupId);
-    } else {
-      newExpanded.add(groupId);
-    }
-=======
     newExpanded.has(groupId) ? newExpanded.delete(groupId) : newExpanded.add(groupId);
->>>>>>> ed10f2b (Add files via upload)
     setExpandedGroups(newExpanded);
   };
 
@@ -279,13 +180,7 @@ export default function Sidebar({
   const handleAnalyticsItemClick = (item: NavigationItem) => {
     setActiveItem(item.id);
     onAnalyticsNavigate?.(item.route);
-<<<<<<< HEAD
-    if (isMobile) {
-      onToggle(false);
-    }
-=======
     if (isMobile) onToggle(false);
->>>>>>> ed10f2b (Add files via upload)
   };
 
   const handleExamSelect = (exam: Exam) => {
@@ -308,54 +203,6 @@ export default function Sidebar({
 
   // 🔹 OTP flow
   const handleSendOTP = async (phone: string) => {
-<<<<<<< HEAD
-  try {
-    const res = await fetch(`${API_BASE}/auth/otp/start`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        country_code: "+91",   // ✅ required
-        phone                // ✅ required
-      }),
-    });
-    if (!res.ok) {
-      const errMsg = await res.text();
-      throw new Error(`Failed to send OTP: ${errMsg}`);
-    }
-
-    setPendingPhone(phone);
-    setShowPhoneModal(false);
-    setShowOTPModal(true);
-  } catch (err) {
-    console.error("Send OTP failed:", err);
-    setShowError(true);
-  }
-};
-
-  const handleSubmitOTP = async (otp: string) => {
-    try {
-      const res = await fetch(`${API_BASE}/auth/otp/verify`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone: pendingPhone, otp }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.message || "OTP failed");
-
-      // check if user exists
-      const profileRes = await fetch(`${API_BASE}/users/phone/${pendingPhone}`);
-      if (profileRes.ok) {
-        const profile = await profileRes.json();
-        login(data.token, profile); // ✅ save in context
-        setShowOTPModal(false);
-        setPendingPhone(null);
-      } else {
-        // user not found -> registration
-        setTempUserId(data.userId);
-        setShowOTPModal(false);
-        setShowRegModal(true);
-      }
-=======
     try {
       const { error } = await supabase.auth.signInWithOtp({ phone: "+91" + phone });
       if (error) throw error;
@@ -378,44 +225,12 @@ export default function Sidebar({
       if (error) throw error;
       setShowOTPModal(false);
       setPendingPhone(null);
->>>>>>> ed10f2b (Add files via upload)
     } catch (err) {
       console.error("OTP verification failed:", err);
       setShowError(true);
     }
   };
 
-<<<<<<< HEAD
-  const handleRegister = async (name: string) => {
-  try {
-    if (!pendingPhone) throw new Error("Missing phone");
-
-    const res = await fetch(`${API_BASE}/users/register`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        country_code: "+91",   // ✅ required
-        phone: pendingPhone,   // ✅ required
-        name                  // ✅ required
-      }),
-    });
-
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.message || "Registration failed");
-
-    // save session
-    login(localStorage.getItem("auth_token") || "", data);
-
-    setShowRegModal(false);
-    setPendingPhone(null);
-    setTempUserId(null);
-  } catch (err) {
-    console.error("Registration failed:", err);
-    setShowError(true);
-  }
-};
-
-=======
   // 🔹 Registration directly in Supabase users table
   const handleRegister = async (name: string) => {
     try {
@@ -440,7 +255,6 @@ export default function Sidebar({
       setShowError(true);
     }
   };
->>>>>>> ed10f2b (Add files via upload)
 
   return (
     <>
@@ -664,28 +478,9 @@ export default function Sidebar({
       </MotiView>
 
       {/* Modals */}
-<<<<<<< HEAD
-      <PhoneLoginModal
-        isVisible={showPhoneModal}
-        onClose={() => setShowPhoneModal(false)}
-        onSendOTP={handleSendOTP}
-      />
-      <OTPModal
-        isVisible={showOTPModal}
-        onClose={() => setShowOTPModal(false)}
-        onSubmitOTP={handleSubmitOTP}
-        phoneNumber={pendingPhone || ""}
-      />
-      <RegistrationModal
-        isVisible={showRegModal}
-        onClose={() => setShowRegModal(false)}
-        onRegister={handleRegister}
-      />
-=======
       <PhoneLoginModal isVisible={showPhoneModal} onClose={() => setShowPhoneModal(false)} onSendOTP={handleSendOTP} />
       <OTPModal isVisible={showOTPModal} onClose={() => setShowOTPModal(false)} onSubmitOTP={handleSubmitOTP} phoneNumber={pendingPhone || ""} />
       <RegistrationModal isVisible={showRegModal} onClose={() => setShowRegModal(false)} onRegister={handleRegister} />
->>>>>>> ed10f2b (Add files via upload)
       <ErrorModal isVisible={showError} onClose={() => setShowError(false)} />
     </>
   );
